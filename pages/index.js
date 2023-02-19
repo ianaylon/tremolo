@@ -80,7 +80,7 @@ export const getServerSideProps = async () => {
   const homeContent = await client.fetch(homeQuery);
 
   return {
-    props: { sections, dates, homeContent },
+    props: { dates, homeContent },
   };
 };
 
