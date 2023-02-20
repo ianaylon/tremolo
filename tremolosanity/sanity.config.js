@@ -21,9 +21,12 @@ export default defineConfig({
           .title('Content')
           .items([
             S.listItem().title('Home').id('home').child(S.document().schemaType('home').id('home')),
+            S.listItem()
+              .title('Tremolo Center')
+              .id('tremoloCenter')
+              .child(S.document().schemaType('tremoloCenter').id('tremoloCenter')),
             S.divider(),
             S.documentTypeListItem('dates').title('Dates'),
-            S.documentTypeListItem('sections').title('Sections'),
           ])
           .showIcons(false),
     }),

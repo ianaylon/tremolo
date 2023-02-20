@@ -1,5 +1,5 @@
-import sections from './sections'
 import dates from './dates'
 import home from './home'
+import tremoloCenter from './tremoloCenter'
 
-export const schemaTypes = [sections, dates, home]
+export const schemaTypes = [dates, home, tremoloCenter]

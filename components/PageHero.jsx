@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 
+import { urlFor } from "@/lib/client";
+
 const PageHero = ({ img, title }) => {
   return (
     <div className='section-hero'>
-      <Image className='section-hero_img' src={img} alt={title}/>
+      <img src={urlFor(img && img)} className="section-hero_img" alt={title}/>
       <div className='section-hero_content'>
         <div className='page-padding'>
           <div className='container'>
