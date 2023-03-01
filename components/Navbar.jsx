@@ -5,7 +5,7 @@ import logo from '../public/tremolo-logo.png'
 import { motion, AnimatePresence } from 'framer-motion'
 import { BiGridSmall, BiLeftArrowAlt } from 'react-icons/bi'
 
-const menuItems = [{name: 'מרכז טרמולו', slug: 'tremolo-center'}, {name: 'חינוך מוזיקלי', slug: 'education'}, {name: 'פרוייקטים/רפרטואר', slug: 'repertoire'}, {name: 'טרמולו בזירה הבינלאומית', slug: 'international'}, {name: 'צוות טרמולו', slug: 'team'}, {name: 'הופעות', slug: 'dates'}, {name: 'יצירת קשר', slug: 'contact'}]
+const menuItems = [{name: 'מרכז טרמולו', slug: 'tremolo-center'}, {name: 'חינוך מוזיקלי', slug: 'music-education'}, {name: 'פרוייקטים/רפרטואר', slug: 'repertoire'}, {name: 'טרמולו בזירה הבינלאומית', slug: 'international'}, {name: 'צוות טרמולו', slug: 'team'}, {name: 'הופעות', slug: 'dates'}, {name: 'יצירת קשר', slug: 'contact'}]
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)

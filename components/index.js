@@ -1,7 +1,10 @@
 export { default as Footer } from "./Footer";
 export { default as Navbar } from "./Navbar";
-export { default as TextCotent } from "./TextContent";
+export { default as TitleTextImage } from "./TitleTextImage";
 export { default as BtnPrimary } from "./BtnPrimary";
 export { default as EventDate } from "./EventDate";
 export { default as BtnSecondary } from "./BtnSecondary";
 export { default as Cta } from "./Cta";
+export { default as MeFeature } from "./MeFeature";
+export { default as PageHero } from "./PageHero";
+export { default as TeamMember } from "./TeamMember";

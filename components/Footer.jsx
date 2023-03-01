@@ -13,7 +13,7 @@ const Footer = () => {
         <h5>ניווט</h5>
         <ul>
           {footerMenu.map((item) => (
-            <li key={item._id}>{item}</li>
+            <li key={item}>{item}</li>
           ))}
         </ul>
       </div>

@@ -25,8 +25,14 @@ export default defineConfig({
               .title('Tremolo Center')
               .id('tremoloCenter')
               .child(S.document().schemaType('tremoloCenter').id('tremoloCenter')),
+            S.listItem()
+              .title('Music Education')
+              .id('musicEducation')
+              .child(S.document().schemaType('musicEducation').id('musicEducation')),
+            S.listItem().title('Team').id('team').child(S.document().schemaType('team').id('team')),
             S.divider(),
             S.documentTypeListItem('dates').title('Dates'),
+            S.documentTypeListItem('teamMembers').title('Team Members'),
           ])
           .showIcons(false),
     }),

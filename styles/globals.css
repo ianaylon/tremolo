@@ -46,6 +46,7 @@ p {
 
 .container {
     width: 100%;
+    position: relative;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -255,6 +256,66 @@ p {
     font-weight: 600;
 }
 
+
+/* MeFeature */
+
+.me-features_carousel {
+    cursor: grab;
+    text-align: center;
+}
+
+.me-features_inner-carousel {
+    display: flex;
+    position: relative;
+    height: 25vw;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+
+.me-feature {
+    position: relative;
+    overflow: hidden;
+    flex-basis: calc(33.3333% - 1rem);
+    flex-shrink: 0;
+    border-radius: 1rem;
+
+    background-color: black;
+}
+
+.me-feature_img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.35;
+}
+
+.me-feature_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    padding: 2.5rem;
+    z-index: 2;
+}
+
+/*teamMember*/
+
+.team-member{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.team-member_img {
+    width: 100%;
+}
+
+
 /* PAGES */
 
 /* homepage */
@@ -378,6 +439,27 @@ p {
     object-fit: cover;
     top: 0;
     left: 0;
+}
+
+
+/* Music Education */
+
+.section-me-about {
+    margin: 5rem 0;
+    overflow: hidden;
+}
+
+.section-me-subjects {
+    background-color: #272727;
+}
+
+/* Team */
+.section-team-members {
+    margin: 5rem 0;
+}
+
+.team-members-list {
+    display: flex;
 }
 
 /* Footer */
