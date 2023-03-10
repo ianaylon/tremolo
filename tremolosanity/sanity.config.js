@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
 
@@ -16,7 +17,7 @@ export default defineConfig({
 
   plugins: [
     deskTool({
-      structure: (S) =>
+      structure: (S, context) =>
         S.list()
           .title('Content')
           .items([
@@ -30,9 +31,16 @@ export default defineConfig({
               .id('musicEducation')
               .child(S.document().schemaType('musicEducation').id('musicEducation')),
             S.listItem().title('Team').id('team').child(S.document().schemaType('team').id('team')),
+            S.listItem().title('Tour').id('tour').child(S.document().schemaType('tour').id('tour')),
             S.divider(),
             S.documentTypeListItem('dates').title('Dates'),
-            S.documentTypeListItem('teamMembers').title('Team Members'),
+            orderableDocumentListDeskItem({
+              type: 'teamMembers',
+              title: 'Team Members',
+              id: 'team-members',
+              S,
+              context,
+            }),
           ])
           .showIcons(false),
     }),

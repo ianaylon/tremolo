@@ -1,31 +1,18 @@
 export default {
-  title: 'Team',
-  name: 'team',
+  title: 'Tour',
+  name: 'tour',
   type: 'document',
   fields: [
     {
       name: 'heroImage',
       type: 'image',
       title: 'Hero Image',
-      options: {
-        hotspot: true,
-      },
     },
     {
       name: 'title',
       type: 'string',
       title: 'Title',
       validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'content',
-      type: 'array',
-      title: 'Content',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
     },
     {
       name: 'ctaText',

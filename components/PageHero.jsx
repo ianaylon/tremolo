@@ -1,6 +1,11 @@
 import React from 'react'
+import imageUrlBuilder from '@sanity/image-url'
+import { client } from '@/lib/client'
 
-import { urlFor } from "@/lib/client";
+const builder = imageUrlBuilder(client)
+function urlFor(source) {
+  return builder.image(source)
+}
 
 const PageHero = ({ img, title }) => {
   return (
