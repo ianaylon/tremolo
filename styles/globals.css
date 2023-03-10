@@ -44,6 +44,12 @@ p {
     padding: 0 2.5rem;
 }
 
+@media screen and (max-width: 580px) {
+    .page-padding {
+        padding: 0 1rem;
+    }
+}
+
 .container {
     width: 100%;
     position: relative;
@@ -155,6 +161,17 @@ p {
     font-size: .8rem;
 }
 
+@media screen and (max-width: 580px) {
+    .event-date {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .event-date .btn-secondary {
+        width: 100%;
+    }
+}
+
 
 /* Navbar */
 
@@ -205,6 +222,13 @@ p {
 
     background-color: #E84C3B;
     box-shadow: 3px 0px 10px rgb(0 0 0 / 20%);
+}
+
+@media screen and (max-width: 580px) {
+
+    .navbar-menu {
+        width: 100%;
+    }
 }
 
 .navbar-menu a {
@@ -265,6 +289,12 @@ p {
     font-weight: 600;
 }
 
+@media screen and (max-width: 580px) {
+    .cta {
+        padding: 1.5rem;
+    }
+}
+
 
 /* MeFeature */
 
@@ -281,6 +311,11 @@ p {
     margin-top: 5rem;
 }
 
+@media screen and (max-width: 580px) {
+    .me-features_inner-carousel {
+        height: 50vh;
+    }
+}
 
 .me-feature {
     position: relative;
@@ -290,6 +325,12 @@ p {
     border-radius: 1rem;
 
     background-color: black;
+}
+
+@media screen and (max-width: 580px) {
+    .me-feature {
+        flex-basis: calc(75% - 1rem);
+    }
 }
 
 .me-feature_img {
@@ -318,6 +359,12 @@ p {
 .team-member {
     flex-basis: calc(50% - 2.5rem);
     position: relative;
+}
+
+@media screen and (max-width: 580px) {
+    .team-member {
+        flex-basis: auto;
+    }
 }
 
 .team-member_img {
@@ -363,6 +410,12 @@ p {
     position: relative;
 }
 
+@media screen and (max-width: 580px) {
+    .home-parallax_image-holder {
+        height: 50vh;
+    }
+}
+
 .home-parallax_image-container {
     position: relative;
     top: -10%;
@@ -381,6 +434,12 @@ p {
 .section-home-dates {
     position: relative;
     top: -5rem;
+}
+
+@media screen and (max-width: 580px) {
+    .section-home-dates {
+        text-align: center;
+    }
 }
 
 .home-dates_title {
@@ -426,6 +485,12 @@ p {
     width: 100%;
 }
 
+@media screen and (max-width: 580px) {
+    .tc-features_item {
+        flex-direction: column-reverse !important;
+    }
+}
+
 .tc-features_item:nth-child(odd){
     flex-direction: row-reverse;
 }
@@ -445,6 +510,12 @@ p {
     flex-basis: 50%;
     position: relative;
     padding-top: 30%;
+}
+
+@media screen and (max-width: 580px) {
+    .tc-features_image-holder {
+        padding-top: 80%;
+    }
 }
 
 .tc-features_image{
@@ -492,10 +563,23 @@ p {
 
 /* Tour */
 .section-dates {
-    margin: 5rem;
+    margin: 5rem 0;
+}
+
+@media screen and (max-width: 580px) {
+    .section-dates {
+        text-align: center;
+    }
 }
 
 /* Footer */
+
+@media screen and (max-width: 580px) {
+    footer {
+        text-align: center;
+    }
+}
+
 .footer_container {
     display: flex;
     flex-wrap: wrap;
@@ -503,6 +587,12 @@ p {
     gap: 1rem;
 
     margin: 5rem 0;
+}
+
+@media screen and (max-width: 580px) {
+    .footer_container {
+        gap: 2.5rem;
+    }
 }
 
 .footer_box {
@@ -521,8 +611,13 @@ footer h6 {
 .footer_social-icons-holder {
     display: flex;
     gap: 0.5rem;
-
     margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 580px) {
+    .footer_social-icons-holder {
+        justify-content: center;
+    }
 }
 
 .footer_logo {
