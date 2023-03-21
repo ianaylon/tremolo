@@ -5,5 +5,15 @@ import musicEducation from './musicEducation'
 import teamMembers from './teamMembers'
 import team from './team'
 import tour from './tour'
+import about from './about'
 
-export const schemaTypes = [dates, home, teamMembers, tremoloCenter, musicEducation, team, tour]
+export const schemaTypes = [
+  dates,
+  home,
+  teamMembers,
+  tremoloCenter,
+  musicEducation,
+  team,
+  tour,
+  about,
+]

@@ -23,6 +23,10 @@ export default defineConfig({
           .items([
             S.listItem().title('Home').id('home').child(S.document().schemaType('home').id('home')),
             S.listItem()
+              .title('About')
+              .id('about')
+              .child(S.document().schemaType('about').id('about')),
+            S.listItem()
               .title('Tremolo Center')
               .id('tremoloCenter')
               .child(S.document().schemaType('tremoloCenter').id('tremoloCenter')),

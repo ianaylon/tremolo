@@ -5,7 +5,7 @@ import logo from '../public/tremolo-logo.png'
 import { motion, AnimatePresence } from 'framer-motion'
 import { BiGridSmall, BiLeftArrowAlt } from 'react-icons/bi'
 
-const menuItems = [{name: 'מרכז טרמולו', slug: 'tremolo-center'}, {name: 'חינוך מוזיקלי', slug: 'music-education'}, {name: 'צוות טרמולו', slug: 'team'}, {name: 'הופעות', slug: 'tour'}, {name: 'יצירת קשר', slug: 'contact'}]
+const menuItems = [{name: 'אודות טרמולו', slug: 'about'}, {name: 'נגני טרמולו', slug: 'team'}, {name: 'רפרטואר', slug: 'repertoire'}, {name: 'הופעות', slug: 'tour'}, {name: 'חינוך מוזיקלי', slug: 'music-education'}, {name: 'מרכז טרמולו', slug: 'tremolo-center'}, {name: 'טרמולו Station', slug: 'tremolo-station'}, {name: 'יצירת קשר', slug: 'contact'}]
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -14,9 +14,6 @@ const Navbar = () => {
       <div className='navbar_open' onClick={() => setToggle(true)}>
         <BiGridSmall />
       </div>
-      <Link href='/'>
-        <Image src={logo} alt="logo" className='navbar_logo' />
-      </Link>
       <AnimatePresence>
         {toggle &&  (
           <motion.div 

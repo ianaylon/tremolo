@@ -6,17 +6,10 @@ import { PortableText } from "@portabletext/react";
 import { client } from "@/lib/client";
 
 const team = ({ teamContent, teamMembersContent }) => {
-  const { title, content, heroImage, ctaText, ctaButton } = teamContent[0];
+  const { title, heroImage, ctaText, ctaButton } = teamContent[0];
   return (
     <>
       <PageHero title={title} img={heroImage} />
-      <div className="section-team-about">
-        <div className="page-padding">
-          <div className="container">
-            <PortableText value={content} />
-          </div>
-        </div>
-      </div>
       <div className="section-team-members">
         <div className="page-padding">
           <div className="container-large">

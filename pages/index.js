@@ -6,6 +6,8 @@ import { client } from "@/lib/client";
 
 import { BtnPrimary, EventDate, Cta } from "@/components";
 import datesBg from "/public/home-dates-bg.jpeg";
+import logo from "../public/tremolo-logo.png";
+import Link from "next/link";
 
 const Home = ({ dates, homeContent }) => {
   const { title, content, button1, ctaButton, ctaText } = homeContent[0];
@@ -15,6 +17,7 @@ const Home = ({ dates, homeContent }) => {
   return (
     <>
       <div className="section-home-hero">
+        <Image src={logo} alt="logo" className="hero_logo" />
         <video
           className="home-hero_video"
           src="/home-bg-video.mp4"

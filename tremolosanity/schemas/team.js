@@ -18,16 +18,6 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'content',
-      type: 'array',
-      title: 'Content',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
-    },
-    {
       name: 'ctaText',
       type: 'string',
       title: 'CTA Text',
