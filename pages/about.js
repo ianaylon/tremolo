@@ -12,6 +12,7 @@ const about = ({ aboutContent }) => {
     <>
       <PageHero img={heroImage} title={title} />
       <div className="section-about-about">
+        <div></div>
         <div className="page-padding">
           <div className="container">
             <div className="rich-text">
