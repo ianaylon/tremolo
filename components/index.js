@@ -9,3 +9,4 @@ export { default as MeFeature } from "./MeFeature";
 export { default as PageHero } from "./PageHero";
 export { default as TeamMember } from "./TeamMember";
 export { default as Collaborations } from "./Collaborations";
+export { default as RepertoireItem } from "./RepertoireItem";

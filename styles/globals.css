@@ -378,6 +378,12 @@ p {
 
 .team-member_img {
     width: 100%;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+.team-member_content {
+    padding: 0.5rem 1.5rem;
 }
 
 .team-member h3 {
@@ -399,6 +405,60 @@ p {
 .collaboration_img {
     width: 100%;
     border-radius: 1rem;
+}
+
+/* RepertoireItem */
+.repertoire_item {
+    flex-basis: calc(33.3333% - 2.5rem);
+}
+
+@media screen and (max-width: 800px) {
+    .repertoire_item {
+        flex-basis: calc(50% - 2.5rem);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .repertoire_item {
+        flex-basis: 100%;
+    }
+}
+
+.repertoire_img-holder {
+    position: relative;
+    padding-top: 80%;
+    overflow: hidden;
+    border-radius: 2.5rem;
+}
+
+.repertoire_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.repertoire_video-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    position: absolute;
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.repertoire_video-link svg {
+    margin-top: auto;
+}
+
+.repertoire_content {
+    padding: 0.5rem 1.5rem;
 }
 
 
@@ -597,6 +657,21 @@ p {
     .section-dates {
         text-align: center;
     }
+}
+
+/* Repertoire */
+.section-repertoire {
+    margin: 5rem 0;
+}
+
+.repertoire_list {
+    position: relative;
+
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+
+    margin-top: 2.5rem;
 }
 
 /* Footer */

@@ -1,8 +1,6 @@
 import React from "react";
 import { Cta, PageHero, TeamMember } from "@/components";
 
-import { PortableText } from "@portabletext/react";
-
 import { client } from "@/lib/client";
 
 const team = ({ teamContent, teamMembersContent }) => {

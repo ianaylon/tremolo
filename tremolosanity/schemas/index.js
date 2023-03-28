@@ -6,6 +6,7 @@ import teamMembers from './teamMembers'
 import team from './team'
 import tour from './tour'
 import about from './about'
+import repertoire from './repertoire'
 
 export const schemaTypes = [
   dates,
@@ -16,4 +17,5 @@ export const schemaTypes = [
   team,
   tour,
   about,
+  repertoire,
 ]

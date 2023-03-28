@@ -36,6 +36,10 @@ export default defineConfig({
               .child(S.document().schemaType('musicEducation').id('musicEducation')),
             S.listItem().title('Team').id('team').child(S.document().schemaType('team').id('team')),
             S.listItem().title('Tour').id('tour').child(S.document().schemaType('tour').id('tour')),
+            S.listItem()
+              .title('Repertoire')
+              .id('repertoire')
+              .child(S.document().schemaType('repertoire').id('repertoire')),
             S.divider(),
             S.documentTypeListItem('dates').title('Dates'),
             orderableDocumentListDeskItem({
