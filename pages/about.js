@@ -6,11 +6,18 @@ import { Collaborations, Cta, PageHero } from "@/components";
 import { client } from "@/lib/client";
 
 const about = ({ aboutContent }) => {
-  const { title, heroImage, content, collaborations, ctaText, ctaButton } =
-    aboutContent[0];
+  const {
+    title,
+    heroImage,
+    credit,
+    content,
+    collaborations,
+    ctaText,
+    ctaButton,
+  } = aboutContent[0];
   return (
     <>
-      <PageHero img={heroImage} title={title} />
+      <PageHero img={heroImage} title={title} credit={credit} />
       <div className="section-about-about">
         <div className="page-padding">
           <div className="container">

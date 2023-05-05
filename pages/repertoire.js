@@ -24,6 +24,7 @@ const repertoire = ({ repertoireContent }) => {
                   text={item.text}
                   image={item.image}
                   video={item.video}
+                  approved={item.approved}
                 />
               ))}
             </div>

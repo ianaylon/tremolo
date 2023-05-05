@@ -4,9 +4,17 @@ import Link from "next/link";
 import { urlFor } from "@/lib/client";
 import { AiFillPlayCircle } from "react-icons/ai";
 
-const RepertoireItem = ({ title, text, image, video }) => {
+const RepertoireItem = ({ title, text, image, video, approved }) => {
   return (
     <div className="repertoire_item">
+      {approved && (
+        <img
+          className="repertoire_approved"
+          src={"/approved.png"}
+          alt={"מאושר סל תרבות"}
+        />
+      )}
+
       <div className="repertoire_img-holder">
         <img className="repertoire_img" src={urlFor(image)} alt={title} />
         {video ? (

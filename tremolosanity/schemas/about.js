@@ -12,6 +12,12 @@ export default {
       },
     },
     {
+      name: 'credit',
+      type: 'string',
+      title: 'Credit',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'title',
       type: 'string',
       title: 'Title',

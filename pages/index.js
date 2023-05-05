@@ -36,7 +36,7 @@ const Home = ({ dates, homeContent }) => {
               <PortableText value={content} />
             </div>
             <div className="margin-top">
-              <BtnPrimary destination={"/"} text={button1} />
+              <BtnPrimary destination={"/about"} text={button1} />
             </div>
           </div>
         </div>

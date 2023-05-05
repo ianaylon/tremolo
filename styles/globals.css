@@ -112,6 +112,20 @@ p {
     right: 1rem;
 }
 
+.hero_title-holder {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0 0.8rem 0.3rem;
+    margin-bottom: 1rem;
+    background-color: #E84C3B;
+    line-height: 1.1;
+}
+
+.hero_credit-holder {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
 
 /* BtnPrimary */
 
@@ -221,7 +235,7 @@ p {
 
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
     height: 100vh;
     width: 50%;
@@ -242,7 +256,7 @@ p {
 
 .navbar-menu a {
     margin: 1rem 0;
-    text-align: end;
+    text-align: center;
     display: block;
     font-size: 2.5rem;
     color: var(--white-color);
@@ -410,6 +424,7 @@ p {
 /* RepertoireItem */
 .repertoire_item {
     flex-basis: calc(33.3333% - 2.5rem);
+    position: relative;
 }
 
 @media screen and (max-width: 800px) {
@@ -422,6 +437,14 @@ p {
     .repertoire_item {
         flex-basis: 100%;
     }
+}
+
+.repertoire_approved {
+    position: absolute;
+    width: 4rem;
+    top: 1rem;
+    left: 1rem;
+    z-index: 5;
 }
 
 .repertoire_img-holder {

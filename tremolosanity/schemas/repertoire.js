@@ -39,6 +39,7 @@ export default {
             {type: 'text', name: 'text', title: 'Text'},
             {type: 'image', name: 'image', title: 'Image'},
             {type: 'string', name: 'video', title: 'Youtube Video'},
+            {type: 'boolean', name: 'approved', title: 'Approved'},
           ],
         },
       ],
