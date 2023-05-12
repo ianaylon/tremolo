@@ -1,16 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import imageUrlBuilder from "@sanity/image-url";
 import { PortableText } from "@portabletext/react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { client } from "@/lib/client";
 
 import { BtnPrimary, EventDate, Cta } from "@/components";
-import datesBg from "/public/home-dates-bg.jpeg";
 import logo from "../public/tremolo-logo.png";
-import Link from "next/link";
+
+const builder = imageUrlBuilder(client);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 const Home = ({ dates, homeContent }) => {
-  const { title, content, button1, ctaButton, ctaText } = homeContent[0];
+  const { title, content, button1, image, credit, ctaButton, ctaText } =
+    homeContent[0];
   const { scrollYProgress } = useScroll();
   const yValue = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
@@ -42,12 +47,18 @@ const Home = ({ dates, homeContent }) => {
         </div>
       </div>
       <div className="section-home-parallax">
+        <div className="credit-holder">
+          <div className="container">
+            {credit && <p className="">צילום: {credit}</p>}
+          </div>
+        </div>
         <div className="home-parallax_image-holder">
           <motion.div
             className="home-parallax_image-container"
             style={{ y: yValue }}
           >
-            <Image src={datesBg} alt="Tremolo Dates" />
+            <img src={urlFor(image && image)} alt={title} />
+            {console.log(urlFor(image))}
           </motion.div>
         </div>
       </div>

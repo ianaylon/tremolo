@@ -40,6 +40,10 @@ export default defineConfig({
               .title('Repertoire')
               .id('repertoire')
               .child(S.document().schemaType('repertoire').id('repertoire')),
+            S.listItem()
+              .title('Contact')
+              .id('contact')
+              .child(S.document().schemaType('contact').id('contact')),
             S.divider(),
             S.documentTypeListItem('dates').title('Dates'),
             orderableDocumentListDeskItem({

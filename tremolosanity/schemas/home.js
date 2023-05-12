@@ -30,6 +30,11 @@ export default {
       title: 'Image',
     },
     {
+      name: 'credit',
+      type: 'string',
+      title: 'Image Credit',
+    },
+    {
       name: 'ctaText',
       type: 'string',
       title: 'CTA Text',

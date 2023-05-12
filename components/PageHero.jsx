@@ -16,13 +16,21 @@ const PageHero = ({ img, credit, title }) => {
       <Link href={"/"}>
         <Image src={logo} alt="logo" className="hero_logo" />
       </Link>
-      <img src={urlFor(img && img)} className="section-hero_img" alt={title} />
+      <div className="section-hero_img-holder">
+        <img
+          src={urlFor(img && img)}
+          className="section-hero_img"
+          alt={title}
+        />
+        <div className="credit-holder">
+          <div className="container">
+            {credit && <p className="">צילום: {credit}</p>}
+          </div>
+        </div>
+      </div>
       <div className="section-hero_content">
         <div className="page-padding">
           <div className="container">
-            <div className="hero_credit-holder">
-              {credit && <p>צילום: {credit}</p>}
-            </div>
             <div className="hero_title-holder">
               <h1>{title}</h1>
             </div>

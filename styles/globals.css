@@ -81,8 +81,12 @@ p {
     margin-bottom: 1.5rem;
 }
 
+.rich-text h3{
+    margin: 1.5rem 0 1rem 0;
+}
+
 .rich-text p{
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .rich-text p:first-of-type{
@@ -113,19 +117,28 @@ p {
 }
 
 .hero_title-holder {
-    display: inline-block;
+    margin: 5rem 0 1rem 0;
     font-size: 1.5rem;
-    padding: 0 0.8rem 0.3rem;
-    margin-bottom: 1rem;
-    background-color: #E84C3B;
     line-height: 1.1;
 }
 
-.hero_credit-holder {
-    position: absolute;
+.credit-holder {
     bottom: 1rem;
     left: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    text-align: left;
 }
+
+@media screen and (max-width: 580px) {
+    .credit-holder {
+        left: 1rem;
+    }
+}
+
+
+
 
 /* BtnPrimary */
 
@@ -213,8 +226,8 @@ p {
 }
 
 .navbar svg{
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     color: var(--white-color);
 }
 
@@ -273,7 +286,6 @@ p {
 /* PageHero */
 
 .section-hero {
-    height: 70vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -281,8 +293,12 @@ p {
     justify-content: flex-end;
 }
 
+.section-hero_img-holder {
+    height: 70vh;
+    position: relative;
+}
+
 .section-hero_img {
-    position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -512,6 +528,10 @@ p {
     margin-bottom: 1rem;
 }
 
+.section-home-parallax {
+    position: relative;
+}
+
 .home-parallax_image-holder {
     height: 100vh;
     overflow: hidden;
@@ -541,7 +561,7 @@ p {
 
 .section-home-dates {
     position: relative;
-    top: -5rem;
+    padding: 5rem 0;
 }
 
 @media screen and (max-width: 580px) {
@@ -557,9 +577,7 @@ p {
 
     font-size: 1.5rem;
     padding: 0 .8rem;
-    margin-bottom: 2.5rem;
-
-    background-color: #E84C3B;
+    margin-bottom: 1rem;
 }
 
 .dates-list {
@@ -576,7 +594,7 @@ p {
 
 /* tremolo-center */
 .section-tc-about {
-    padding: 5rem 0;
+    padding: 0 0 5rem 0;
 }
 
 .section-tc-features {
@@ -639,17 +657,20 @@ p {
 /* Music Education */
 
 .section-me-about {
-    margin: 5rem 0;
-    overflow: hidden;
+    margin: 0 0 5rem 0;
 }
 
 .section-me-subjects {
     background-color: #272727;
 }
 
+.section-me-collaborations {
+    margin: 5rem 0;
+}
+
 /* Team */
 .section-team-members {
-    margin: 5rem 0;
+    margin: 0 0 5rem 0;
 }
 
 .team-members-list {
@@ -660,18 +681,23 @@ p {
 
 /* Tour */
 .section-dates {
-    margin: 5rem 0;
+    margin: 0 0 5rem 0;
 }
 
 /* About */
-.section-about-about, .section-about-collaborations {
-    margin: 5rem 0;
+
+.section-about-about {
+    margin: 0 0 2.5rem 0;
+}
+
+.section-about-collaborations {
+    margin: 0 0 5rem 0;
 }
 
 .collaborations_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
@@ -684,7 +710,7 @@ p {
 
 /* Repertoire */
 .section-repertoire {
-    margin: 5rem 0;
+    margin: 0 0 5rem 0;
 }
 
 .repertoire_list {
@@ -695,6 +721,11 @@ p {
     flex-wrap: wrap;
 
     margin-top: 2.5rem;
+}
+
+/* Contact */
+.section-contact {
+    margin: 0 0 5rem 0;
 }
 
 /* Footer */

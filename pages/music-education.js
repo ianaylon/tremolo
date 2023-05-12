@@ -1,5 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import { MeFeature, PageHero, TitleTextImage, Cta } from "@/components";
+import {
+  MeFeature,
+  PageHero,
+  TitleTextImage,
+  Collaborations,
+  Cta,
+} from "@/components";
 import { motion } from "framer-motion";
 import { PortableText } from "@portabletext/react";
 
@@ -10,17 +16,11 @@ const MusicEducation = ({ musicEducationContent }) => {
     heroImage,
     title,
     content,
-    features,
     titleTextImage,
+    sponsors,
     ctaText,
     ctaButton,
   } = musicEducationContent[0];
-  const [width, setWidth] = useState(0);
-  const carousel = useRef();
-
-  useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
 
   return (
     <>
@@ -28,18 +28,9 @@ const MusicEducation = ({ musicEducationContent }) => {
       <div className="section-me-about">
         <div className="page-padding">
           <div className="container">
-            <PortableText value={content} />
-            <motion.div className="me-features_carousel" ref={carousel}>
-              <motion.div
-                className="me-features_inner-carousel"
-                drag="x"
-                dragConstraints={{ right: width, left: 0 }}
-              >
-                {features?.map((item, id) => (
-                  <MeFeature feature={item} key={id} />
-                ))}
-              </motion.div>
-            </motion.div>
+            <div className="rich-text">
+              <PortableText value={content} />
+            </div>
           </div>
         </div>
       </div>
@@ -47,6 +38,17 @@ const MusicEducation = ({ musicEducationContent }) => {
         {titleTextImage.map((item, id) => (
           <TitleTextImage content={item} key={id} />
         ))}
+      </div>
+      <div className="section-me-collaborations">
+        <div className="page-padding">
+          <div className="container">
+            <div className="collaborations_list">
+              {sponsors?.map((item, id) => (
+                <Collaborations content={item} key={id} />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
       <Cta mainText={ctaText} btnText={ctaButton} />
     </>

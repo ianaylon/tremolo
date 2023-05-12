@@ -57,6 +57,20 @@ export default {
       ],
     },
     {
+      name: 'sponsors',
+      type: 'array',
+      title: 'Sponsors',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {type: 'string', name: 'title', title: 'Title'},
+            {type: 'image', name: 'image', title: 'Image'},
+          ],
+        },
+      ],
+    },
+    {
       name: 'ctaText',
       type: 'string',
       title: 'CTA Text',
