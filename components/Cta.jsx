@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-const Cta = ({ mainText, btnText }) => {
+const Cta = ({ text, btn }) => {
   return (
     <div className="cta">
       <div className="page-padding">
         <div className="container">
-          <p>{mainText}</p>
+          <p>{text}</p>
           <Link className="btn-dark margin-top" href={"/contact"}>
-            {btnText}
+            {btn}
           </Link>
         </div>
       </div>

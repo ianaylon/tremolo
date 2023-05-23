@@ -38,6 +38,8 @@ export default {
             {type: 'string', name: 'title', title: 'Title'},
             {type: 'text', name: 'text', title: 'Text'},
             {type: 'image', name: 'image', title: 'Image'},
+            {type: 'string', name: 'btntext', title: 'Button Text'},
+            {type: 'string', name: 'btnlink', title: 'Button Link'},
           ],
         },
       ],

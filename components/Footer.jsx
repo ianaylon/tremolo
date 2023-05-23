@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/tremolo-logo.png";
+import NetanyaLogo from "../public/netanya.png";
+import CultureLogo from "../public/culture.png";
+import TremoloLogo from "../public/tremolo-logo.png";
 import { AiFillInstagram, AiFillFacebook, AiFillYoutube } from "react-icons/ai";
 
 const menuItems = [
@@ -39,19 +41,34 @@ const Footer = () => {
           972-865-3245+
         </p>
         <div className="footer_social-icons-holder">
-          <Link href={"/"}>
+          <Link
+            href={"https://www.facebook.com/tremolo.israel.percussion.center"}
+            target="blank"
+          >
             <AiFillFacebook size={40} />
           </Link>
-          <Link href={"/"}>
+          <Link
+            href={"https://www.youtube.com/@Tremoloensemble/videos"}
+            target="blank"
+          >
             <AiFillYoutube size={40} />
           </Link>
-          <Link href={"/"}>
+          <Link
+            href={
+              "https://open.spotify.com/artist/1BghyuqcH0J0MSykbcu3dq?si=ziiBNNeWQ7yaPLtS9lS5Uw"
+            }
+            target="blank"
+          >
             <AiFillInstagram size={40} />
           </Link>
         </div>
       </div>
       <div className="footer_box">
-        <Image src={logo} alt="logo" className="footer_logo" />
+        <Image src={TremoloLogo} alt="logo" className="footer_logo" />
+        <div className="footer_logo-flex">
+          <Image src={NetanyaLogo} alt="logo" width={50} />
+          <Image src={CultureLogo} alt="logo" width={125} />
+        </div>
         <h6>
           עיצוב ופיתוח אתר - יאן אילון <br />
           כל הזכויות שמורות ®

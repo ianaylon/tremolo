@@ -58,7 +58,6 @@ const Home = ({ dates, homeContent }) => {
             style={{ y: yValue }}
           >
             <img src={urlFor(image && image)} alt={title} />
-            {console.log(urlFor(image))}
           </motion.div>
         </div>
       </div>
@@ -81,7 +80,7 @@ const Home = ({ dates, homeContent }) => {
           </div>
         </div>
       </div>
-      <Cta mainText={ctaText} btnText={ctaButton} />
+      <Cta text={ctaText} btn={ctaButton} />
     </>
   );
 };

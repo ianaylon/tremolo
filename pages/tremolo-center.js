@@ -29,7 +29,7 @@ const TremoloCenter = ({ tremoloCenterContent }) => {
           ))}
         </div>
       </div>
-      <Cta mainText={ctaText} btnText={ctaButton} />
+      <Cta text={ctaText} btn={ctaButton} />
     </>
   );
 };

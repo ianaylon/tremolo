@@ -23,7 +23,7 @@ const tour = ({ dates, tour }) => {
           </div>
         </div>
       </div>
-      <Cta mainText={ctaText} btnText={ctaButton} />
+      <Cta text={ctaText} btn={ctaButton} />
     </>
   );
 };
