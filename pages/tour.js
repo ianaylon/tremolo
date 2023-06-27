@@ -29,7 +29,7 @@ const tour = ({ dates, tour }) => {
 };
 
 export const getServerSideProps = async () => {
-  const datesQuery = '*[_type == "dates"]';
+  const datesQuery = '*[_type == "dates"] | order(date asc)';
   const dates = await client.fetch(datesQuery);
 
   const tourQuery = '*[_type == "tour"]';

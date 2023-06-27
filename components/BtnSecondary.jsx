@@ -1,10 +1,12 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
-const BtnSecondary = ({destination, text}) => {
+const BtnSecondary = ({ destination, text, target }) => {
   return (
-    <Link href={destination} className="btn-secondary">{text}</Link>
-  )
-}
+    <Link href={destination} className="btn-secondary" target={target}>
+      {text}
+    </Link>
+  );
+};
 
-export default BtnSecondary
+export default BtnSecondary;

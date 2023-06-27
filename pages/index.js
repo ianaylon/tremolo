@@ -75,7 +75,7 @@ const Home = ({ dates, homeContent }) => {
               ))}
             </ul>
             <div className="margin-top">
-              <BtnPrimary destination={"/"} text="לכל האירועים" />
+              <BtnPrimary destination={"/tour"} text="לכל האירועים" />
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ const Home = ({ dates, homeContent }) => {
 };
 
 export const getServerSideProps = async () => {
-  const datesQuery = '*[_type == "dates"]';
+  const datesQuery = '*[_type == "dates"] | order(date asc)';
   const dates = await client.fetch(datesQuery);
 
   const homeQuery = '*[_type == "home"]';
