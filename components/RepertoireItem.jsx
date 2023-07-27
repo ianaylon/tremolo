@@ -16,7 +16,11 @@ const RepertoireItem = ({ title, text, image, video, approved }) => {
       )}
 
       <div className="repertoire_img-holder">
-        <img className="repertoire_img" src={urlFor(image)} alt={title} />
+        {image ? (
+          <img className="repertoire_img" src={urlFor(image)} alt={title} />
+        ) : (
+          false
+        )}
         {video ? (
           <Link
             href={video}
