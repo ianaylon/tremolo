@@ -11,11 +11,15 @@ const EventDate = ({ date: { title, date, venue, url } }) => {
           <h3>{title}</h3>
           <h4>{venue}</h4>
         </div>
-        <BtnSecondary
-          destination={url}
-          text="קניית כרטיסים"
-          target={"_blank"}
-        />
+        {url ? (
+          <BtnSecondary
+            destination={url}
+            text="קניית כרטיסים"
+            target={"_blank"}
+          />
+        ) : (
+          false
+        )}
       </div>
     </>
   );
