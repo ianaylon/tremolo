@@ -8,6 +8,7 @@ import tour from './tour'
 import about from './about'
 import repertoire from './repertoire'
 import contact from './contact'
+import tremolo from './tremolo'
 
 export const schemaTypes = [
   dates,
@@ -20,4 +21,5 @@ export const schemaTypes = [
   about,
   repertoire,
   contact,
+  tremolo,
 ]

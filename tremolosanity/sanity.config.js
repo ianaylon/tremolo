@@ -44,6 +44,10 @@ export default defineConfig({
               .title('Contact')
               .id('contact')
               .child(S.document().schemaType('contact').id('contact')),
+            S.listItem()
+              .title('Tremolo')
+              .id('tremolo')
+              .child(S.document().schemaType('tremolo').id('tremolo')),
             S.divider(),
             S.documentTypeListItem('dates').title('Dates'),
             orderableDocumentListDeskItem({

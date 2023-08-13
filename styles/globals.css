@@ -137,6 +137,14 @@ p {
     }
 }
 
+.ltr-page {
+    direction: ltr;
+}
+
+.page-background-light {
+    background-color: #272727;
+}
+
 
 
 
@@ -651,6 +659,11 @@ p {
     object-fit: cover;
     top: 0;
     left: 0;
+}
+
+/* Tremolo */
+.section-tremolo {
+    padding-bottom: 5rem;
 }
 
 
