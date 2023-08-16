@@ -54,9 +54,7 @@ const Footer = () => {
             <AiFillYoutube size={40} />
           </Link>
           <Link
-            href={
-              "https://open.spotify.com/artist/1BghyuqcH0J0MSykbcu3dq?si=ziiBNNeWQ7yaPLtS9lS5Uw"
-            }
+            href={"https://www.instagram.com/tremoloensemble/"}
             target="blank"
           >
             <AiFillInstagram size={40} />

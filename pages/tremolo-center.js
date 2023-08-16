@@ -22,13 +22,6 @@ const TremoloCenter = ({ tremoloCenterContent }) => {
           </div>
         </div>
       </div>
-      <div className="section-tc-features">
-        <div className="tc-features-container">
-          {titleTextImage.map((item, id) => (
-            <TitleTextImage content={item} key={id} />
-          ))}
-        </div>
-      </div>
       <div className="section-tc-video">
         <div className="container">
           <video
@@ -36,6 +29,13 @@ const TremoloCenter = ({ tremoloCenterContent }) => {
             src="https://dl.dropbox.com/scl/fi/5h7ji16xdky7vjis3kxxo/tremolo-reel.mp4?rlkey=uu9lu165x0kfg7u0e6bxxat8w&dl=1"
             controls
           ></video>
+        </div>
+      </div>
+      <div className="section-tc-features">
+        <div className="tc-features-container">
+          {titleTextImage.map((item, id) => (
+            <TitleTextImage content={item} key={id} />
+          ))}
         </div>
       </div>
       <Cta text={ctaText} btn={ctaButton} />
