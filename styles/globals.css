@@ -602,7 +602,7 @@ p {
 
 /* tremolo-center */
 .section-tc-about {
-    padding: 0 0 5rem 0;
+    padding: 0 0 0 0;
 }
 
 .section-tc-features {
@@ -617,6 +617,15 @@ p {
 .tc-features_item {
     display: flex;
     width: 100%;
+}
+
+.section-tc-video {
+    padding: 5rem 0;
+}
+
+.tc-video {
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 580px) {

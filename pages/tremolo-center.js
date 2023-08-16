@@ -29,6 +29,15 @@ const TremoloCenter = ({ tremoloCenterContent }) => {
           ))}
         </div>
       </div>
+      <div className="section-tc-video">
+        <div className="container">
+          <video
+            className="tc-video"
+            src="https://dl.dropbox.com/scl/fi/5h7ji16xdky7vjis3kxxo/tremolo-reel.mp4?rlkey=uu9lu165x0kfg7u0e6bxxat8w&dl=1"
+            controls
+          ></video>
+        </div>
+      </div>
       <Cta text={ctaText} btn={ctaButton} />
     </>
   );

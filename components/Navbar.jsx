@@ -14,6 +14,7 @@ const menuItems = [
   { name: "חינוך מוזיקלי", slug: "music-education" },
   { name: "מרכז טרמולו", slug: "tremolo-center" },
   { name: "יצירת קשר", slug: "contact" },
+  { name: "Tremolo", slug: "tremolo" },
 ];
 
 const Navbar = () => {
