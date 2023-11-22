@@ -306,6 +306,12 @@ p {
     position: relative;
 }
 
+@media screen and (max-width: 580px) {
+    .section-hero_img-holder {
+        height: 40vh;
+    }
+}
+
 .section-hero_img {
     z-index: 1;
     width: 100%;
