@@ -38,7 +38,7 @@ const Footer = () => {
           <br />
           שדרות גיבורי ישראל 9, נתניה
           <br />
-          972-865-3245+
+          098653245
         </p>
         <div className="footer_social-icons-holder">
           <Link
