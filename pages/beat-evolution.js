@@ -4,7 +4,7 @@ import { PortableText } from "@portabletext/react";
 import { client } from "@/lib/client";
 
 const beat = ({ beatContent }) => {
-  const { title, heroImage, content, tremoloVideos } = beatContent[0];
+  const { title, heroImage, content, beatVideos } = beatContent[0];
 
   return (
     <>
@@ -17,7 +17,7 @@ const beat = ({ beatContent }) => {
                 <PortableText value={content} />
               </div>
               <div className="repertoire_list">
-                {tremoloVideos?.map((item, id) => (
+                {beatVideos?.map((item, id) => (
                   <RepertoireItem
                     key={id}
                     title={item.title}
