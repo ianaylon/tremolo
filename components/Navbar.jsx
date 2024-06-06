@@ -15,6 +15,7 @@ const menuItems = [
   { name: "מרכז טרמולו", slug: "tremolo-center" },
   { name: "יצירת קשר", slug: "contact" },
   { name: "Tremolo", slug: "tremolo" },
+  { name: "The BEAT Evolution", slug: "beat-evolution" },
 ];
 
 const Navbar = () => {
