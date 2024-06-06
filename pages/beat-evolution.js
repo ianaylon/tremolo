@@ -3,8 +3,8 @@ import { PageHero, RepertoireItem } from "@/components";
 import { PortableText } from "@portabletext/react";
 import { client } from "@/lib/client";
 
-const tremolo = ({ tremoloContent }) => {
-  const { title, heroImage, content, tremoloVideos } = tremoloContent[3];
+const beat = ({ beatContent }) => {
+  const { title, heroImage, content, tremoloVideos } = beatContent[0];
 
   return (
     <>
@@ -37,12 +37,12 @@ const tremolo = ({ tremoloContent }) => {
 };
 
 export const getServerSideProps = async () => {
-  const tremoloQuery = '*[_type == "tremolo"]';
-  const tremoloContent = await client.fetch(tremoloQuery);
+  const beatQuery = '*[_type == "beat"]';
+  const beatContent = await client.fetch(beatQuery);
 
   return {
-    props: { tremoloContent },
+    props: { beatContent },
   };
 };
 
-export default tremolo;
+export default beat;

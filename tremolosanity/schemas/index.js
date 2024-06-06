@@ -9,6 +9,7 @@ import about from './about'
 import repertoire from './repertoire'
 import contact from './contact'
 import tremolo from './tremolo'
+import beat from './beat'
 
 export const schemaTypes = [
   dates,
@@ -22,4 +23,5 @@ export const schemaTypes = [
   repertoire,
   contact,
   tremolo,
+  beat
 ]

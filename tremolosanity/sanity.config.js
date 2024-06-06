@@ -48,6 +48,10 @@ export default defineConfig({
               .title('Tremolo')
               .id('tremolo')
               .child(S.document().schemaType('tremolo').id('tremolo')),
+            S.listItem()
+              .title('Beat Evolution')
+              .id('beat')
+              .child(S.document().schemaType('beat').id('beat')),
             S.divider(),
             S.documentTypeListItem('dates').title('Dates'),
             orderableDocumentListDeskItem({
