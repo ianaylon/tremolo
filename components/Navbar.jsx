@@ -8,7 +8,7 @@ import { BiGridSmall, BiLeftArrowAlt } from "react-icons/bi";
 const menuItems = [
   { name: "בית", slug: "" },
   { name: "אודות טרמולו", slug: "about" },
-  { name: "נגני טרמולו", slug: "team" },
+  { name: "חברי טרמולו", slug: "team" },
   { name: "רפרטואר", slug: "repertoire" },
   { name: "הופעות", slug: "tour" },
   { name: "חינוך מוזיקלי", slug: "music-education" },
